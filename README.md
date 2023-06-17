@@ -3,8 +3,6 @@
 **Django** starter styled with **[Atlantis PRO](https://appseed.us/product/atlantis-dark/django/)**, a premium `Bootstrap 4` design from `ThemeKita`.
 The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
-> Actively supported by [AppSeed](https://appseed.us/) via `Email` and `Discord`.
-
 <br />
 
 > UI Kit: https://github.com/app-generator/thk-atlantis-free
