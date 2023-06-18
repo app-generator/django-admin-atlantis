@@ -46,8 +46,8 @@
                 <div class="collapse" id="dashboard">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="/index.html">
-                                <span class="sub-item">Dashboard 1</span>
+                            <a href="{% url 'dashboard' %}">
+                                <span class="sub-item">Dashboard</span>
                             </a>
                         </li>
                     </ul>
@@ -68,52 +68,47 @@
                 <div class="collapse" id="base">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="components/avatars.html">
+                            <a href="{% url 'avatars' %}">
                                 <span class="sub-item">Avatars</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/buttons.html">
+                            <a href="{% url 'buttons' %}">
                                 <span class="sub-item">Buttons</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/gridsystem.html">
+                            <a href="{% url 'gridsystem' %}">
                                 <span class="sub-item">Grid System</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/panels.html">
+                            <a href="{% url 'panels' %}">
                                 <span class="sub-item">Panels</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/notifications.html">
+                            <a href="{% url 'notifications' %}">
                                 <span class="sub-item">Notifications</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/sweetalert.html">
+                            <a href="{% url 'sweetalert' %}">
                                 <span class="sub-item">Sweet Alert</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/font-awesome-icons.html">
-                                <span class="sub-item">Font Awesome Icons</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="components/simple-line-icons.html">
+                            <a href="{% url 'simple_line_icons' %}">
                                 <span class="sub-item">Simple Line Icons</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/flaticons.html">
+                            <a href="{% url 'flaticons' %}">
                                 <span class="sub-item">Flaticons</span>
                             </a>
                         </li>
                         <li>
-                            <a href="components/typography.html">
+                            <a href="{% url 'typography' %}">
                                 <span class="sub-item">Typography</span>
                             </a>
                         </li>
@@ -129,27 +124,27 @@
                 <div class="collapse" id="sidebarLayouts">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="sidebar-style-1.html">
+                            <a href="{% url 'sidebarone' %}">
                                 <span class="sub-item">Sidebar Style 1</span>
                             </a>
                         </li>
                         <li>
-                            <a href="overlay-sidebar.html">
+                            <a href="{% url 'sidebar_overlay' %}">
                                 <span class="sub-item">Overlay Sidebar</span>
                             </a>
                         </li>
                         <li>
-                            <a href="compact-sidebar.html">
+                            <a href="{% url 'sidebar_compact' %}">
                                 <span class="sub-item">Compact Sidebar</span>
                             </a>
                         </li>
                         <li>
-                            <a href="static-sidebar.html">
+                            <a href="{% url 'sidebar_static' %}">
                                 <span class="sub-item">Static Sidebar</span>
                             </a>
                         </li>
                         <li>
-                            <a href="icon-menu.html">
+                            <a href="{% url 'icon_menu' %}">
                                 <span class="sub-item">Icon Menu</span>
                             </a>
                         </li>
@@ -165,7 +160,7 @@
                 <div class="collapse" id="forms">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="forms/forms.html">
+                            <a href="{% url 'forms' %}">
                                 <span class="sub-item">Basic Form</span>
                             </a>
                         </li>
@@ -181,12 +176,12 @@
                 <div class="collapse" id="tables">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="tables/tables.html">
+                            <a href="{% url 'tables' %}">
                                 <span class="sub-item">Basic Table</span>
                             </a>
                         </li>
                         <li>
-                            <a href="tables/datatables.html">
+                            <a href="{% url 'datatables' %}">
                                 <span class="sub-item">Datatables</span>
                             </a>
                         </li>
@@ -202,7 +197,7 @@
                 <div class="collapse" id="maps">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="maps/jqvmap.html">
+                            <a href="{% url 'charts' %}">
                                 <span class="sub-item">JQVMap</span>
                             </a>
                         </li>
@@ -218,12 +213,12 @@
                 <div class="collapse" id="charts">
                     <ul class="nav nav-collapse">
                         <li>
-                            <a href="charts/charts.html">
+                            <a href="{% url 'sprakline' %}">
                                 <span class="sub-item">Chart Js</span>
                             </a>
                         </li>
                         <li>
-                            <a href="charts/sparkline.html">
+                            <a href="{% url 'maps' %}">
                                 <span class="sub-item">Sparkline</span>
                             </a>
                         </li>
@@ -231,7 +226,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a href="widgets.html">
+                <a href="{% url 'widgets' %}">
                     <i class="fas fa-desktop"></i>
                     <p>Widgets</p>
                     <span class="badge badge-success">4</span>

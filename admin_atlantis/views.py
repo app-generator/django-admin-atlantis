@@ -18,8 +18,11 @@ def buttons(request):
 def flaticons(request):
     return render(request, 'components/flaticons.html')    
 
-def fwicons(request):
-    return render(request, 'components/font-awesome-icons.html')    
+def fontawesome(request):
+    return render(request, 'components/font-awesome-icons.html')
+
+def simple_line_icons(request):
+    return render(request, 'components/simple-line-icons.html')
 
 def gridsystem(request):
     return render(request, 'components/gridsystem.html')  
