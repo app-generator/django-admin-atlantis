@@ -18,4 +18,12 @@ urlpatterns = [
     path('sidebar-overlay', views.sidebar_overlay, name='sidebar_overlay'),
     path('compact-sidebar', views.sidebar_compact, name='compact_sidebar'),
     path('static-sidebar', views.sidebar_static, name='static-sidebar'),
+    path('icon-menu', views.icon_menu, name='icon-menu'),
+    path('forms', views.forms, name='forms'),
+    path('tables/data-tables', views.datatables, name='datatables'),
+    path('tables/tables', views.tables, name='tables'),
+    path('charts/charts', views.charts, name='charts'),
+    path('charts/sparkline', views.sprakline, name='sparkline'),
+    path('maps/jqvmap', views.maps, name='map'),
+    path('widgets', views.widgets, name='widgets'),    
 ]

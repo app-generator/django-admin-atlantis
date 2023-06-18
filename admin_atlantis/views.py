@@ -48,4 +48,34 @@ def sidebar_compact(request):
     return render(request, 'compact-sidebar.html')  
 
 def sidebar_static(request):
-    return render(request, 'static-sidebar.html')  
+    return render(request, 'static-sidebar.html')
+
+def icon_menu(request):
+    return render(request, 'icon-menu.html')
+
+
+# Forms
+def forms(request):
+    return render(request, 'forms/forms.html')
+
+# Tables    
+def datatables(request):
+    return render(request, 'tables/datatables.html')
+
+def tables(request):
+    return render(request, 'tables/tables.html')
+
+# Charts  
+def charts(request):
+    return render(request, 'charts/charts.html')
+
+def sprakline(request):
+    return render(request, 'charts/sparkline.html') 
+
+# Maps
+def maps(request):
+    return render(request, 'maps/jqvmap.html')
+
+# Widgets
+def widgets(request):
+    return render(request, 'widgets.html')               
