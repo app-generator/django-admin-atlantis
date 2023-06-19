@@ -72,7 +72,7 @@ def tables(request):
 def charts(request):
     return render(request, 'charts/charts.html')
 
-def sprakline(request):
+def sparkline(request):
     return render(request, 'charts/sparkline.html') 
 
 # Maps
