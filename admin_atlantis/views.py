@@ -7,6 +7,8 @@ from django.shortcuts import render, redirect
 def dashboard(request):
     return render(request, 'index.html')
 
+def starter_template(request):
+    return render(request, 'starter-template.html')
 
 # Components
 def avatars(request):

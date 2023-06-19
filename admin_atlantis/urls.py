@@ -5,10 +5,11 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', views.dashboard, name='dashboard'),
+    path('starter-template', views.starter_template, name='starter_template'),
     path('components/avatars', views.avatars, name='avatars'),
     path('components/buttons', views.buttons, name='buttons'),
     path('components/flaticons', views.flaticons, name='flaticons'),
-    path('components/font-awesome-icons', views.fontawesome, name='font-awesome-icons'),
+    path('components/font-awesome-icons', views.fontawesome, name='fontawesome'),
     path('components/simple-line-icons', views.simple_line_icons, name='simple_line_icons'),
     path('components/gridsystem', views.gridsystem, name='gridsystem'),
     path('components/panels', views.panels, name='panels'),
