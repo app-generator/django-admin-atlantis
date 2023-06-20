@@ -6,7 +6,7 @@
 <body>
     <div class="wrapper {% block wrapper_extra_class %}{% endblock wrapper_extra_class %}">
         {% include 'includes/head.html' %}
-        {% include 'includes/header.html' %}
+        {% include 'includes/header.html' with active_page=active_page %}
         <div class="{% block sidebar_class %}{% endblock sidebar_class %}">
             {% include 'includes/sidebar-main.html' %}
         </div>

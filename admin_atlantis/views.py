@@ -5,82 +5,151 @@ from django.shortcuts import render, redirect
 
 # Pages -- Dashboard
 def dashboard(request):
-    return render(request, 'index.html')
+    context = {
+        'active_page': 'dashboard' 
+    }
+    return render(request, 'index.html',context)
 
 def starter_template(request):
     return render(request, 'starter-template.html')
 
 # Components
 def avatars(request):
-    return render(request, 'components/avatars.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/avatars.html',context)
 
 def buttons(request):
-    return render(request, 'components/buttons.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/buttons.html',context)
 
 def flaticons(request):
-    return render(request, 'components/flaticons.html')    
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/flaticons.html',context)    
 
 def fontawesome(request):
-    return render(request, 'components/font-awesome-icons.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/font-awesome-icons.html',context)
 
 def simple_line_icons(request):
-    return render(request, 'components/simple-line-icons.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/simple-line-icons.html',context)
 
 def gridsystem(request):
-    return render(request, 'components/gridsystem.html')  
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/gridsystem.html',context)  
 
 def panels(request):
-    return render(request, 'components/panels.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/panels.html',context)
 
 def notifications(request):
-    return render(request, 'components/notifications.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/notifications.html',context)
 
 def sweetalert(request):
-    return render(request, 'components/sweetalert.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/sweetalert.html',context)
 
 def typography(request):
-    return render(request, 'components/typography.html')
+    context = {
+        'active_page': 'base' 
+    }
+    return render(request, 'components/typography.html',context)
 
 
 # Sidebar layouts
 def sidebarone(request):
-    return render(request, 'sidebar-style-1.html')
+    context = {
+        'active_page': 'sidebar' 
+    }
+    return render(request, 'sidebar-style-1.html',context)
 
 def sidebar_overlay(request):
-    return render(request, 'overlay-sidebar.html')
+    context = {
+        'active_page': 'sidebar' 
+    }
+    return render(request, 'overlay-sidebar.html',context)
 
 def sidebar_compact(request):
-    return render(request, 'compact-sidebar.html')  
+    context = {
+        'active_page': 'sidebar' 
+    }
+    return render(request, 'compact-sidebar.html',context)  
 
 def sidebar_static(request):
-    return render(request, 'static-sidebar.html')
+    context = {
+        'active_page': 'sidebar' 
+    }
+    return render(request, 'static-sidebar.html',context)
 
 def icon_menu(request):
-    return render(request, 'icon-menu.html')
+    context = {
+        'active_page': 'sidebar' 
+    }
+    return render(request, 'icon-menu.html',context)
 
 
 # Forms
 def forms(request):
-    return render(request, 'forms/forms.html')
+    context = {
+        'active_page': 'forms' 
+    }
+    return render(request, 'forms/forms.html',context)
 
 # Tables    
 def datatables(request):
-    return render(request, 'tables/datatables.html')
+    context = {
+        'active_page': 'tables' 
+    }
+    return render(request, 'tables/datatables.html',context)
 
 def tables(request):
-    return render(request, 'tables/tables.html')
+    context = {
+        'active_page': 'tables' 
+    }
+    return render(request, 'tables/tables.html',context)
 
 # Charts  
 def charts(request):
-    return render(request, 'charts/charts.html')
+    context = {
+        'active_page': 'charts' 
+    }
+    return render(request, 'charts/charts.html',context)
 
 def sparkline(request):
-    return render(request, 'charts/sparkline.html') 
+    context = {
+        'active_page': 'charts' 
+    }
+    return render(request, 'charts/sparkline.html',context) 
 
 # Maps
 def maps(request):
-    return render(request, 'maps/jqvmap.html')
+    context = {
+        'active_page': 'maps' 
+    }
+    return render(request, 'maps/jqvmap.html',context)
 
 # Widgets
 def widgets(request):
-    return render(request, 'widgets.html')               
+    context = {
+        'active_page': 'widgets' 
+    }
+    return render(request, 'widgets.html',context)               
