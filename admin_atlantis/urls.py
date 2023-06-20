@@ -5,6 +5,12 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', views.dashboard, name='dashboard'),
+    path('accounts/register', views.signup, name='signup'),
+    path('accounts/login', views.AuthSignin.as_view(), name='login'),
+    path('accounts/change-password', views.UserPasswordChangeView.as_view(), name='change_password'),
+    path('accounts/recover-password', views.recover_password, name='recover_password'),
+    path('accounts/reset-password', views.password_reset, name='password_reset'),
+    path('accounts/password-reset-done', views.password_reset_complete, name='password_reset_complete'),
     path('starter-template', views.starter_template, name='starter_template'),
     path('components/avatars', views.avatars, name='avatars'),
     path('components/buttons', views.buttons, name='buttons'),

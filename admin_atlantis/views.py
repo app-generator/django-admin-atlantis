@@ -1,7 +1,65 @@
 from django.shortcuts import render, redirect
-# from django.contrib.auth import views as auth_views
-# from django.contrib.auth import logout
-# from django.contrib.auth.decorators import login_required
+from admin_atlantis.forms import RegistrationForm,LoginForm,UserPasswordChangeForm
+from django.contrib.auth import views as auth_views
+from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required
+
+def signup(request):
+  if request.method == 'POST':
+      form = RegistrationForm(request.POST)
+      if form.is_valid():
+        form.save()
+        print('Account created successfully!')
+        return redirect('/accounts/login.html')
+      else:
+        print("Registration failed!")
+  else:
+    form = RegistrationForm()
+  context = {'form': form}
+  return render(request, 'accounts/register.html', context)
+
+class AuthSignin(auth_views.LoginView):
+  template_name = 'accounts/login.html'
+  form_class = LoginForm
+  success_url = '/'
+
+class UserPasswordChangeView(auth_views.PasswordChangeView):
+  template_name = 'accounts/change-password.html'
+  form_class = UserPasswordChangeForm 
+
+# class UserPasswordResetView(auth_views.PasswordResetView):
+#   template_name = 'accounts/forgot-password.html'
+#   form_class = UserPasswordResetForm
+
+# class UserPasswordResetConfirmView(auth_views.PasswordResetConfirmView):
+#   template_name = 'accounts/recover-password.html'
+#   form_class = UserSetPasswordForm
+
+
+
+# def user_logout_view(request):
+#   logout(request)
+#   return redirect('/accounts/auth-signin/')
+
+
+#Account 
+# def signup(request):
+#     return render(request,'accounts/register.html')
+
+# def login(request):
+#     return render(request,'accounts/login.html')
+
+def recover_password(request):
+    return render(request,'accounts/recover-password.html')        
+
+# def change_password(request):
+#     return render(request,'accounts/change-password.html')
+
+def password_reset(request):
+    return render(request,'accounts/reset-password.html')
+
+def password_reset_complete(request):
+    return render(request,'accounts/password-reset-done.html')                  
 
 # Pages -- Dashboard
 def dashboard(request):
