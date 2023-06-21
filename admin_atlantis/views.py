@@ -10,7 +10,7 @@ def signup(request):
       if form.is_valid():
         form.save()
         print('Account created successfully!')
-        return redirect('/accounts/login.html')
+        return redirect('/accounts/login/')
       else:
         print("Registration failed!")
   else:
