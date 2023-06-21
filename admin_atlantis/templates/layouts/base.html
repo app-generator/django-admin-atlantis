@@ -10,10 +10,10 @@
     {% block extrastyle %}{% endblock extrastyle %}
     {% block extrahead %}{% endblock extrahead %}
 </head>
-<body>
+<body data-background-color="dark">
     <div class="wrapper {% block wrapper_extra_class %}{% endblock wrapper_extra_class %}">
         {% include 'includes/header.html' with active_page=active_page %}
-        <div class="{% block sidebar_class %}{% endblock sidebar_class %}">
+        <div class="{% block sidebar_class %}{% endblock sidebar_class %}" data-background-color="dark2">
             {% include 'includes/sidebar-main.html' %}
         </div>
         <div class="main-panel">

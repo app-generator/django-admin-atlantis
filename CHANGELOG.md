@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.0.3] 2023-06-21
+### Changes
+
+- Activate Dark-Mode
+
 ## [1.0.2] 2023-06-21
 ### Changes
 
